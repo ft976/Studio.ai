@@ -350,10 +350,10 @@ function CreateScreen({ onGenerate }: { onGenerate: (input: GenerationInput) => 
     <div className="max-w-4xl mx-auto pb-24 animate-in fade-in slide-in-from-bottom-4 duration-500">
       <div className="mb-10 text-center space-y-4">
         <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-primary/10 text-primary mb-2">
-          <Wand2 className="w-8 h-8" />
+          <Sparkles className="w-8 h-8 text-primary animate-pulse" />
         </div>
         <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
-          Pocket <span className="text-primary">Studio</span>
+          Video <span className="text-primary">Sparkle</span>
         </h1>
         <p className="text-lg text-muted-foreground max-w-xl mx-auto">
           Turn a one-line idea into a finished vertical short video with narration, cinematic pacing,
@@ -1001,10 +1001,10 @@ function AppLayout({
         <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-2 group">
             <div className="w-8 h-8 rounded-lg bg-primary text-white flex items-center justify-center shadow-md group-hover:scale-105 transition-transform">
-              <Video className="w-4 h-4" />
+              <Sparkles className="w-4 h-4" />
             </div>
             <span className="font-display font-bold text-xl tracking-tight">
-              Studio<span className="text-primary">.ai</span>
+              Video<span className="text-primary">Sparkle</span>
             </span>
           </Link>
           <nav className="flex items-center gap-6">
