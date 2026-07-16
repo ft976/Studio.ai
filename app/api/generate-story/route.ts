@@ -2,8 +2,8 @@ import { NextRequest, NextResponse } from "next/server";
 import { generateText } from "@/lib/backend-ai";
 
 const IMAGE_COUNT_BY_TIER: Record<"short" | "long", number> = {
-  short: 9,
-  long: 11,
+  short: 7,
+  long: 9,
 };
 
 const WORDS_PER_SEC = 2.35;
@@ -66,7 +66,7 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "Idea parameter is required" }, { status: 400 });
     }
 
-    const imageCount = IMAGE_COUNT_BY_TIER[durationTier] || 9;
+    const imageCount = IMAGE_COUNT_BY_TIER[durationTier] || 7;
     const unitTarget = targetUnitCount(durationTier, language);
 
     const systemPrompt = buildSystemPrompt(imageCount, unitTarget, language);

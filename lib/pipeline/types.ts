@@ -11,11 +11,6 @@ export const THEMES = [
   { id: 'dark_horror', label: 'Dark / Horror' },
   { id: 'pixel_art_retro', label: 'Pixel Art / Retro Game' },
   { id: 'storybook_watercolor', label: 'Storybook Watercolor' },
-  { id: '3d_render_unreal', label: '3D Render (Unreal)' },
-  { id: 'vintage_photography', label: 'Vintage Photography' },
-  { id: 'cyberpunk_neon', label: 'Cyberpunk / Neon' },
-  { id: 'oil_painting', label: 'Classic Oil Painting' },
-  { id: 'comic_book', label: 'Comic Book' },
 ] as const;
 
 export type ThemeId = (typeof THEMES)[number]['id'];
@@ -31,8 +26,8 @@ export const SUBTITLE_STYLES = [
 export type SubtitleStyleId = (typeof SUBTITLE_STYLES)[number]['id'];
 
 export const DURATION_TIERS = [
-  { id: 'short', label: '40-50s', imageCount: 9 },
-  { id: 'long', label: '60-70s', imageCount: 11 },
+  { id: 'short', label: '40-50s', imageCount: 7 },
+  { id: 'long', label: '60-70s', imageCount: 9 },
 ] as const;
 
 export type DurationTierId = (typeof DURATION_TIERS)[number]['id'];

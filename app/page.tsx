@@ -174,11 +174,6 @@ function ThemeSelector({ value, onChange }: { value: ThemeId; onChange: (v: Them
     dark_horror: 'from-red-900 to-stone-950',
     pixel_art_retro: 'from-emerald-400 to-cyan-600',
     storybook_watercolor: 'from-rose-200 to-orange-200',
-    '3d_render_unreal': 'from-blue-600 to-blue-900',
-    vintage_photography: 'from-amber-700 to-yellow-900',
-    cyberpunk_neon: 'from-cyan-400 to-purple-600',
-    oil_painting: 'from-yellow-700 to-amber-900',
-    comic_book: 'from-red-500 to-yellow-500',
   };
   return (
     <div className="bg-white rounded-3xl p-6 md:p-8 shadow-sm border border-black/[0.04]">
@@ -188,7 +183,7 @@ function ThemeSelector({ value, onChange }: { value: ThemeId; onChange: (v: Them
           {THEMES.find((t) => t.id === value)?.label}
         </span>
       </div>
-      <div className="grid grid-cols-4 sm:grid-cols-6 gap-3">
+      <div className="grid grid-cols-4 sm:grid-cols-7 gap-3">
         {THEMES.map((theme) => (
           <button
             key={theme.id}
