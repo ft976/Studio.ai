@@ -1,0 +1,6 @@
+{
+  "name": "Video Sparkle",
+  "description": "An AI-powered vertical short video and episodic series generator with multi-language voice narration and dynamic captions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
