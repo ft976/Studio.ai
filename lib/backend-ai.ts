@@ -27,6 +27,11 @@ export const THEME_STYLE_KEYWORDS: Record<string, string> = {
   dark_horror: "dark horror atmosphere, moody shadows, unsettling lighting, gothic horror illustration",
   pixel_art_retro: "16-bit pixel art, retro video game sprite style, limited color palette",
   storybook_watercolor: "storybook watercolor illustration, soft brush textures, whimsical children's book art",
+  "3d_render_unreal": "unreal engine 5 render, highly detailed 3d modeling, octane render, raytracing, cinematic lighting",
+  vintage_photography: "vintage film photography, polaroid style, faded colors, grain, nostalgic mood, soft focus",
+  cyberpunk_neon: "cyberpunk, neon lighting, futuristic city, synthwave colors, glowing pinks and blues, dystopian",
+  oil_painting: "classic oil painting on canvas, thick impasto brushstrokes, fine art, museum quality, masterpiece",
+  comic_book: "comic book art style, ink lines, halftone patterns, dynamic action framing, graphic novel illustration",
 };
 
 // ─── Unified LLM Call (Nvidia / Gemini) ───────────────────────────────────────

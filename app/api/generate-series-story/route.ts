@@ -2,8 +2,8 @@ import { NextRequest, NextResponse } from "next/server";
 import { generateText } from "@/lib/backend-ai";
 
 const SCENE_COUNTS: Record<string, number> = {
-  short: 7,
-  long: 9,
+  short: 9,
+  long: 11,
 };
 
 const LANGUAGE_LABELS: Record<string, string> = {
@@ -26,6 +26,11 @@ const THEME_LABELS: Record<string, string> = {
   dark_horror: "dark horror",
   pixel_art_retro: "retro pixel art game",
   storybook_watercolor: "storybook watercolor illustration",
+  "3d_render_unreal": "high quality 3d render unreal engine",
+  vintage_photography: "vintage analog photography",
+  cyberpunk_neon: "cyberpunk neon sci-fi",
+  oil_painting: "classic fine art oil painting",
+  comic_book: "graphic novel comic book style",
 };
 
 function buildPrompt(
@@ -99,7 +104,7 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "Idea parameter is required" }, { status: 400 });
     }
 
-    const scenesPerPart = SCENE_COUNTS[durationTier] || 7;
+    const scenesPerPart = SCENE_COUNTS[durationTier] || 9;
     const prompt = buildPrompt(idea, numParts, scenesPerPart, language, theme);
 
     const raw = await generateText({
